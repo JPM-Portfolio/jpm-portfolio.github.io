@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>James Mensah | Instructional Design Portfolio</title>
-<style>
-body{
-font-family: Arial, sans-serif;
-background:#f5f7fb;
-color:#333;
-max-width:900px;
-margin:auto;
-padding:40px;
-line-height:1.6;
-}
+  <title>My eLearning Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 40px;
+    }
 
-h1{
-border-bottom:2px solid #eee;
-padding-bottom:10px;
-}
+    h1 {
+      text-align: center;
+    }
 
-.project{
-margin-top:30px;
-padding:25px;
-background:white;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
 
-a{
-text-decoration:none;
-font-weight:bold;
-}
-</style>
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: black;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .tag {
+      font-size: 12px;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .storyline { background: #2c6e91; }
+    .rise { background: #f2a900; }
+  </style>
 </head>
 
 <body>
 
-<h1>James Mensah – Instructional Design Portfolio</h1>
+<h1>My eLearning Portfolio</h1>
 
-<p>
-I design interactive learning experiences using Articulate Storyline and Rise.
-My focus is scenario-based learning and practical onboarding training.
-</p>
+<div class="grid">
 
-<div class="project">
-<h2>Supply Teacher Behaviour Scenario</h2>
+  <!-- Storyline -->
+  <a class="card" href="https://jpm-portfolio.github.io/supply-teacher-scenario/story.html">
+    <div class="tag storyline">Storyline</div>
+    <h3>Supply Teacher Scenario</h3>
+    <p>Classroom behaviour management scenario.</p>
+  </a>
 
-<p>
-Branching scenario where learners decide how to respond to classroom disruption and receive feedback on their choices.
-<br><strong>Tools:</strong> Articulate Storyline 360
-</p>
+  <a class="card" href="https://jpm-portfolio.github.io/safeguarding-scenario/story.html">
+    <div class="tag storyline">Storyline</div>
+    <h3>Safeguarding Scenario</h3>
+    <p>Responding to safeguarding concerns.</p>
+  </a>
 
-<a href="https://jpm-portfolio.github.io/supply-teacher-scenario/" target="_blank">
-View Project
-</a>
+  <a class="card" href="https://jpm-portfolio.github.io/difficult-conversations-scenario/story.html">
+    <div class="tag storyline">Storyline</div>
+    <h3>Difficult Conversations Scenario</h3>
+    <p>Handling sensitive workplace discussions.</p>
+  </a>
 
-</div>
+  <!-- Rise -->
+  <a class="card" href="https://jpm-portfolio.github.io/supply-teacher-onboarding/">
+    <div class="tag rise">Rise</div>
+    <h3>Supply Teacher Onboarding</h3>
+    <p>Interactive onboarding module.</p>
+  </a>
 
-<div class="project">
-<h2>Supply Teacher Onboarding Course</h2>
+  <a class="card" href="https://jpm-portfolio.github.io/safeguarding-module/">
+    <div class="tag rise">Rise</div>
+    <h3>Safeguarding Module</h3>
+    <p>Core safeguarding training.</p>
+  </a>
 
-<p>
-A Rise microlearning course introducing supply teachers to first-day expectations and safeguarding responsibilities.
-<br><strong>Tools:</strong> Articulate Rise 360
-</p>
-
-<a href="https://jpm-portfolio.github.io/supply-teacher-onboarding/" target="_blank">
-View Project
-</a>
+  <a class="card" href="https://jpm-portfolio.github.io/difficult-conversations-module/">
+    <div class="tag rise">Rise</div>
+    <h3>Difficult Conversations Module</h3>
+    <p>Communication skills training.</p>
+  </a>
 
 </div>
 
